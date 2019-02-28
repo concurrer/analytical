@@ -76,7 +76,6 @@ type IntSet struct {
 
 func (intSet IntSet) Add(i int) {
 	intSet.set[i] = true
-	//fmt.Printf("\nintSet called for f2=%d on intSet=%v",i,intSet)
 }
 
 func checkError(err error, s string) {

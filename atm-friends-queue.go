@@ -112,8 +112,8 @@ func main() {
 	// map for holding the friendship pairs
 	m := make(map[int]IntSet, 0)
 	// initiate the map for numStudents and blank pairs
-	// students start from 1->N... so to ignore 0 index with <=
-	for i := 0; i <= numStudents; i++ {
+	// students start from 1->N... 
+	for i := 1; i <= numStudents; i++ {
 		set := make(map[int]bool, 0)
 		intSet := IntSet{set: set}
 		m[i] = intSet

@@ -108,7 +108,7 @@ func main() {
 		p = head // reset node for new word
 	}
 
-	// for each word in 'input' check if it exists as a whole word in the trie
+	// for each word in 'input' check if it exists as a compound word in the trie
 	for _, word := range input {
 		if isCompound := searchCompoundWord(head, word); isCompound {
 			output = append(output, word)

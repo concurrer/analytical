@@ -77,7 +77,6 @@ func searchCompoundWord(head node, word string) (isCompound bool) {
 	}
 
 	if isPrefixWholeWord && (!hasTail) && (numWords > 0) { // no more string and its a isPrefixWholeWord in every iteration and its not a single word but at least two
-		fmt.Println("\nsetting isCompound to true\n")
 		isCompound = true
 	}
 	return // naked return
